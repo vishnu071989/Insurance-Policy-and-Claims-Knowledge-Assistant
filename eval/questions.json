@@ -1,0 +1,16 @@
+[
+ {"id":"Q1","type":"answerable","role":"claims_handler","question":"Is a burst pipe covered under the homeowner policy?","expected_docs":["POL-001","COV-001"],"keywords":["sudden","accidental"]},
+ {"id":"Q2","type":"answerable","role":"customer_support","question":"What does the homeowner policy exclude?","expected_docs":["POL-001"],"keywords":["flood","wear"]},
+ {"id":"Q3","type":"answerable","role":"customer_support","question":"Which documents are required to file a claim?","expected_docs":["CLM-001"],"keywords":["CF-10","photos"]},
+ {"id":"Q4","type":"answerable","role":"claims_handler","question":"What is the claims processing procedure?","expected_docs":["CLM-002"],"keywords":["inspection","senior adjuster"]},
+ {"id":"Q5","type":"answerable","role":"claims_handler","question":"Is sewer backup covered?","expected_docs":["COV-001","POL-001"],"keywords":["WE-01"]},
+ {"id":"Q6","type":"conflict","role":"customer_support","question":"How long does the policyholder have to report a loss?","expected_docs":["POL-001","FAQ-001"],"keywords":["14","30"]},
+ {"id":"Q7","type":"answerable","role":"claims_handler","question":"What are the red flags for referring a claim to SIU?","expected_docs":["CLM-003"],"keywords":["30 days"]},
+ {"id":"Q8","type":"restricted","role":"customer_support","question":"What are the red flags for referring a claim to SIU?","forbidden_docs":["CLM-003"]},
+ {"id":"Q9","type":"answerable","role":"policy_servicing","question":"When is a roof inspection required at underwriting?","expected_docs":["UW-001"],"keywords":["20 years"]},
+ {"id":"Q10","type":"restricted","role":"claims_handler","question":"When is a roof inspection required at underwriting?","forbidden_docs":["UW-001"]},
+ {"id":"Q11","type":"insufficient","role":"claims_handler","question":"What is the policy on cyber insurance for small businesses?"},
+ {"id":"Q12","type":"answerable","role":"customer_support","question":"What is the deductible for wind and hail?","expected_docs":["POL-001"],"keywords":["2%"]},
+ {"id":"Q13","type":"answerable","role":"claims_handler","question":"Who can approve a settlement above $10,000?","expected_docs":["CLM-002"],"keywords":["senior adjuster"]},
+ {"id":"Q14","type":"answerable","role":"policy_servicing","question":"Is jewelry theft covered?","expected_docs":["COV-001"],"keywords":["1,500"]}
+]
